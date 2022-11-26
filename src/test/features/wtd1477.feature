@@ -1,25 +1,25 @@
-@Regression
-@Products
-Feature: Validate products features
+Feature: validate payment reports functionality
 
-  Scenario: Open list products page
-    Given User is on the InvoiceManager home page
-    When User clicks on Products menu
-    And User clicks on list products submenu
-    Then User should be open list products page
+  Scenario: validate payment report based on valid credentials and submit
+    Given customer should navigate to IM Home Page
+    And Click on reports from left panel
+    And Click on Payment reports
+    When user enter all required filed of new payment report
+    And  Click submit button
+    Then User should validate the reports generated based on the user request
 
-  Scenario: open update product page
-    Given User is on list products page
-    When User clicks on edit product button in action column
-    Then user will be navigated to update product page
+  @TC1
+  Scenario: Calender page load correctly
+    Given I open the browser
+    And I login to URL "http://3.13.126.58/AMS3.0/auth/login/" with email "admin@gic.com" and password "Admin123"
+    And I navigate to home URL"http://3.13.126.58/AMS3.0/home"
+    When I click on calender
+    Then  It should load calender page
 
-  Scenario: Validate product update functionality with valid data
-    Given User is on update product page
-    When User edits valid Name, Details and Price
-    And User clicks on update product button
-    Then User should get "product successfully updated" message
-
-  Scenario: Verify updated product info into product list
-    Given User is on list product page
-    When User enter updated product in search input box
-    Then Updated product should be appear in the list
+  Scenario: validate payment report based on valid credentials and submit
+    Given customer should navigate to IM Home Page
+    And Click on reports from left panel
+    And Click on Payment reports
+    When user enter all required filed of new payment report
+    And  Click submit button
+    Then User should validate the reports generated based on the user request
