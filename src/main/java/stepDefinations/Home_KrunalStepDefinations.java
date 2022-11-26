@@ -25,4 +25,9 @@ public class Home extends CommonFunction {
         homePage.load();
         homePage.VerifyHomePage();
     }
+    @Then("^user should be open homepage$")
+    public void user_should_be_open_homepage() throws Throwable {
+        homePage.load();
+        homePage.VerifyHomePage();
+    }
 }

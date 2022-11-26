@@ -59,6 +59,13 @@ public  class HomePage{
 
         // driver.findElement(By.id("products_index")).click();
     }
+    public void VerifyListProductsPage1() {
+
+        // driver.findElement(By.id("products_index")).click();
+    }    public void VerifyListProductsPage2() {
+
+        // driver.findElement(By.id("products_index")).click();
+    }
 }
 
 
