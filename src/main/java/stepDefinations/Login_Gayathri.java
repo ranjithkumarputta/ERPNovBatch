@@ -50,7 +50,6 @@ public class Login extends CommonFunctions {
 
         Assert.assertEquals(expectedValue,actualValue);
 
-
     }
 
 }
