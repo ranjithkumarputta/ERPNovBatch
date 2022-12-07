@@ -49,7 +49,7 @@ public class Login extends CommonFunctions {
         String actualValue = driver.findElement(By.xpath("//p[contains(text(),'Logged In Successfully')]")).getText();
 
         Assert.assertEquals(expectedValue,actualValue);
-        System.out.println("changed");
+
 
     }
 
