@@ -37,6 +37,24 @@ public  class HomePage{
 
     }
 
+    public void signInVerify1() {
+
+        String expectedValue = "Logged In Successfully";
+        String actualValue = driver.findElement(By.xpath("//div//p[contains(text(), 'Logged In Successfully')]")).getText();
+        Assert.assertEquals(expectedValue, actualValue);
+
+
+    }
+
+    public void signInVerify2() {
+
+        String expectedValue = "Logged In Successfully";
+        String actualValue = driver.findElement(By.xpath("//div//p[contains(text(), 'Logged In Successfully')]")).getText();
+        Assert.assertEquals(expectedValue, actualValue);
+
+
+    }
+
     public void VerifyHomePage() {
 
         String expectedHomePage = "Welcome to Invoice Manager!"+"\n"+"()";
@@ -56,6 +74,13 @@ public  class HomePage{
     }
 
     public void VerifyListProductsPage() {
+
+        // driver.findElement(By.id("products_index")).click();
+    }
+    public void VerifyListProductsPage1() {
+
+        // driver.findElement(By.id("products_index")).click();
+    }    public void VerifyListProductsPage2() {
 
         // driver.findElement(By.id("products_index")).click();
     }

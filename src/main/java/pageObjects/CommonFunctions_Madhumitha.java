@@ -14,6 +14,30 @@ public void OpenBrowser(){
     driver.manage().window().maximize();
 
 }
+
+    public void OpenBrowser2(){
+
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+
+    }
+
+    public void OpenBrowser3(){
+
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+
+    }
+
+    public void OpenBrowser4(){
+
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+
+    }
 public  void CloseBrowser(){
 
 driver.close();
